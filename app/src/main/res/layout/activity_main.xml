@@ -4,74 +4,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#08ad7f"
     android:padding="16dp"
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/edit_distance"
+        android:id="@+id/edit_email"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:id="@+id/text_distance"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/edit_distance"
-        android:layout_centerHorizontal="true"
-        android:text="Total de kms" />
+        android:layout_marginTop="126dp"
+        android:background="#fff"
+        android:hint="e-mail"
+        android:padding="8dp" />
 
     <EditText
-        android:id="@+id/edit_price"
+        android:id="@+id/edit_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/edit_distance" />
-
-    <TextView
-        android:id="@+id/text_price"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/edit_price"
-        android:layout_centerHorizontal="true"
-        android:text="Preço por litro" />
-
-    <EditText
-        android:id="@+id/edit_autonomy"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/text_price" />
-
-    <TextView
-        android:id="@+id/text_autonomy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/edit_autonomy"
-        android:layout_centerHorizontal="true"
-        android:text="Autonomia" />
-
-    <TextView
-        android:id="@+id/text_total_spend"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/text_autonomy"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"
-        android:text="Seu gasto total será de:" />
-
-    <TextView
-        android:id="@+id/text_total_value"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/text_total_spend"
-        android:layout_centerHorizontal="true"
-        android:text="R$ 0" />
+        android:layout_below="@id/edit_email"
+        android:layout_marginTop="8dp"
+        android:background="#fff"
+        android:hint="senha"
+        android:padding="8dp" />
 
     <Button
-        android:id="@+id/button_calculate"
+        android:id="@+id/button_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/text_total_value"
-        android:layout_marginTop="32dp"
-        android:text="Calcular" />
+        android:layout_below="@id/edit_password"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#dadada"
+        android:text="Login"
+        android:textAllCaps="true"
+        android:textColor="#08AD7F" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Ainda não é cadastrado? Cadastra-se"
+        android:textColor="#fff" />
 
+    <ImageView
+        android:id="@+id/image_support"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_support"
+        app:tint="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/image_support"
+        android:gravity="center"
+        android:text="Esqueceu sua senha?" />
 </RelativeLayout>
