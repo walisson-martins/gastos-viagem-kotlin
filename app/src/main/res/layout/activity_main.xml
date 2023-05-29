@@ -11,7 +11,8 @@
         android:id="@+id/edit_distance"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/distance" />
+        android:hint="@string/distance"
+        android:inputType="number" />
 
     <TextView
         android:layout_width="match_parent"
@@ -21,11 +22,12 @@
         android:text="@string/total_km" />
 
     <EditText
-        android:id="@+id/edit_preco"
+        android:id="@+id/edit_price"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:hint="@string/price" />
+        android:hint="@string/price"
+        android:inputType="numberDecimal" />
 
     <TextView
         android:layout_width="match_parent"
@@ -39,7 +41,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:hint="@string/autonomy" />
+        android:hint="@string/autonomy"
+        android:inputType="numberDecimal" />
 
     <TextView
         android:layout_width="match_parent"
