@@ -1,65 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#08ad7f"
     android:padding="16dp"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/edit_email"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/button_a"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="126dp"
-        android:background="#fff"
-        android:hint="e-mail"
-        android:padding="8dp" />
-
-    <EditText
-        android:id="@+id/edit_password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/edit_email"
-        android:layout_marginTop="8dp"
-        android:background="#fff"
-        android:hint="senha"
-        android:padding="8dp" />
+        android:text="button A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
 
     <Button
-        android:id="@+id/button_login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/edit_password"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="#dadada"
-        android:text="Login"
-        android:textAllCaps="true"
-        android:textColor="#08AD7F" />
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/button_login"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:text="Ainda não é cadastrado? Cadastra-se"
-        android:textColor="#fff" />
+        android:text="Button B"
+        app:layout_constraintCircle="@id/button_a"
+        app:layout_constraintCircleRadius="100dp"
+        app:layout_constraintCircleAngle="15"
+        app:layout_constraintStart_toEndOf="@id/button_a"
+        app:layout_constraintTop_toTopOf="@id/button_a" />
 
-    <ImageView
-        android:id="@+id/image_support"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_alignParentBottom="true"
-        android:src="@drawable/ic_support"
-        app:tint="@color/black" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@id/image_support"
-        android:gravity="center"
-        android:text="Esqueceu sua senha?" />
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
