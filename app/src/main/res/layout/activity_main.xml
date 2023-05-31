@@ -12,20 +12,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="button A"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintEnd_toStartOf="@id/button_b"
+        app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:id="@+id/button_b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button B"
-        app:layout_constraintCircle="@id/button_a"
-        app:layout_constraintCircleRadius="100dp"
-        app:layout_constraintCircleAngle="15"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/button_a"
         app:layout_constraintTop_toTopOf="@id/button_a" />
 
